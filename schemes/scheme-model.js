@@ -27,7 +27,7 @@ function add(scheme) {
     .returning("*")
 }
 
-function update(id, changes) {
+function update(changes, id) {
   return db("schemes")
     .update(changes)
     .where({ id })
