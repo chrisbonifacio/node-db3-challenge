@@ -17,7 +17,7 @@ function findById(id) {
 
 function findSteps(id) {
   return db("steps")
-    .select("scheme_name", "step_number", "instructions")
+    .select("*")
     .where({ id })
 }
 
